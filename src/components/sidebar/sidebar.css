@@ -1,0 +1,60 @@
+.sidebar {
+  background-color: #059669;
+  cursor: pointer;
+  color: #ecfdf5;
+  /* background-color: #8b5cf6; */
+}
+.sidebar-wrapper {
+  width: 100%;
+  padding: 1.7rem;
+  font-size: 1.2rem;
+  margin-top: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+.home {
+  display: flex;
+  gap: 1.4rem;
+  align-items: center;
+}
+.icon {
+  font-size: 2.2rem !important;
+}
+.mbl-icon {
+  display: none !important;
+}
+@media (max-width: 38em) {
+  .mbl-icon {
+    display: block !important;
+    font-size: 2rem !important;
+    margin: 1.2rem !important;
+
+    position: relative;
+    top: 0;
+    z-index: 2;
+  }
+  .close {
+    color: white;
+    font-size: 2.4rem !important;
+    margin: 1rem !important;
+  }
+  .sidebar {
+    position: absolute;
+    max-width: 150px;
+    height: 100vh;
+    top: 13%;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    z-index: 1;
+  }
+  .sidebarOpen {
+    transform: translateX(0%);
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+  }
+}

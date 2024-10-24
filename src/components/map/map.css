@@ -1,0 +1,8 @@
+.full-height-map {
+  height: 80vh;
+  max-width: 100vw;
+  z-index: 0;
+}
+.popup {
+  font-size: 1.7rem;
+}

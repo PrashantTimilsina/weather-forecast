@@ -1,0 +1,31 @@
+.top {
+  grid-column: 1/-1;
+  position: relative;
+}
+.top {
+  display: flex;
+  background-color: #10b981;
+  color: #f0fdf4;
+}
+.top-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.title {
+  padding: 1rem;
+  padding-right: 1.5rem;
+}
+.image {
+  height: 70px;
+  width: 70px;
+  object-fit: cover;
+  padding: 0.9rem;
+  border-radius: 10px;
+}
+@media (max-width: 48em) {
+  .title {
+    font-size: 1.2rem;
+  }
+}

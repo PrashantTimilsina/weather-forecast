@@ -1,0 +1,13 @@
+.home-container {
+  width: 100%;
+  height: 100vh;
+  /* background-color: yellow; */
+  display: grid;
+  grid-template-rows: 70px 1fr;
+  grid-template-columns: 220px 1fr;
+}
+@media (max-width: 38em) {
+  .home-container {
+    grid-template-columns: 1fr;
+  }
+}

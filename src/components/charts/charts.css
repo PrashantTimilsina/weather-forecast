@@ -1,0 +1,6 @@
+@media (max-width: 38em) {
+  .charts {
+    position: absolute;
+    top: 10rem;
+  }
+}
