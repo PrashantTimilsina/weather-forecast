@@ -5,7 +5,7 @@ import { useState } from "react";
 
 async function fetchCityCoordinates(cityName) {
   const res = await fetch(
-    `http://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=0da0693ec1e5f623e7e8558e47fec000`
+    `https://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=0da0693ec1e5f623e7e8558e47fec000`
   );
   const data = await res.json();
   if (data.length > 0) {
@@ -19,7 +19,7 @@ async function fetchCityCoordinates(cityName) {
 
 async function fetchForecast(lat, lon) {
   const res = await fetch(
-    `http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=0da0693ec1e5f623e7e8558e47fec000&units=metric`
+    `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=0da0693ec1e5f623e7e8558e47fec000&units=metric`
   );
   const data = await res.json();
   return res.ok ? data.list : alert("Failed to fetch forecast data");

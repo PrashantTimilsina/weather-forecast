@@ -11,7 +11,7 @@ function UserProvider({ children }) {
   async function fetchSearchedData(city) {
     setIsLoading(true);
     const res = await fetch(
-      `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=0da0693ec1e5f623e7e8558e47fec000`
+      `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=0da0693ec1e5f623e7e8558e47fec000`
     );
     const data = await res.json();
 
